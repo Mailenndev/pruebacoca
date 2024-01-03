@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&family=Playfair+Display:wght@700&family=Raleway:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open Sans"
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #131313;
+    color: #fff;
+    padding: 0 10px;
+
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+
+}
+/* seccion cabezera */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.gradient-text {
+    background-image: linear-gradient(45deg, #eecda3
+    , #bc12ff);
+     -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+}
+header nav a:hover {
+    color: #C536ED;
+}
+.nav-responsive {
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+/* SECCIÓN INICIO*/
+#inicio {
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px;
+}
+#inicio .fila {
+    display: flex;
+    align-items: center;
+}
+#inicio .fila .col {
+    width: 50%;
+}
+#inicio .fila .col .contenedor-img{
+    max-width: 200px;
+    width: fit-content;
+    margin: auto;
+}
+#inicio .fila .col .contenedor-img img{
+    width: 100%;
+    border-radius: 500px;
+}
+#inicio .fila .col p{
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+#inicio .fila .col h1{
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+#inicio .fila .col button{
+    display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #eecda3, #bc12ff); 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0; 
+margin-left: 30%;}
+    
+#sobremi {
+    background-color: #262626;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+#sobremi .fila{
+    display: flex;
+}
+#sobremi .fila .col {
+    width: 55%;
+}
+#sobremi .fila .col h3 {
+    color: #C536ED;
+    margin-bottom: 20px;
+    font-size: 30px;
+text-align: center;}
+
+    #sobremi .fila .col h2{
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+#sobremi .fila .col p{
+font-size: 15px;
+text-align: center;
+}
+#sobremi .fila .col .contenedor-img {
+    width: 100%;
+}
+#sobremi .fila .col .contenedor-img img {
+    width: 100%;
+    display: block;
+}
+#sobremi .fila .info {
+padding: 10px;
+}
+/*SECCIÓN CURRICULUM*/
+#micurriculum {
+    background-color: #262626;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+#micurriculum h3{
+    color: #C536ED;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#micurriculum .fila{
+    display: flex;
+}
+#micurriculum .fila .col{
+    width: 50%;
+}
+#micurriculum .fila .col .experiencia{
+    color: #C536ED;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#micurriculum .educacion {
+    color: #C536ED;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#micurriculum .fila .col h2{
+    color: #fff;
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+span {
+    /*color: #bc12ff;*/
+    color: linear-gradient(45deg, #eecda3, #bc12ff); 
+    
+}
+#micurriculum .info{
+    border-left: 2px solid #fff;
+    position: relative;
+}
+#micurriculum .info .item {
+    padding-left: 20px;
+    margin-bottom: 30px;
+
+}
+#micurriculum .info .item .circulo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: -6px;
+    margin-top: 6px;
+}
+
+/*SECCION PORTFOLIO*/
+#portfolio {
+    background-color: #262626;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+#portfolio h3{
+    color: #C536ED;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#portfolio .fila{
+    display: flex;
+    justify-content: space-evenly;
+}
+#portfolio .fila .col{
+    width: 30%;
+}
+#portfolio .fila .trabajo{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+#portfolio .fila .trabajo .desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #C536ED;
+    background: rgba(0, 0, 0,.7);
+    opacity: 0;
+
+}
+#portfolio .fila .trabajo .desc:hover{
+    opacity: 1;
+}
+#portfolio .fila img{
+    width: 100%;
+
+}
+/*SECCION HABILIDADES*/
+#habilidades {
+    background-color: #262626;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 40px;
+}
+#habilidades h3{
+    color: #C536ED;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#habilidades .icon-svg {
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+/*Seccion CONTACTO*/
+
+#contacto{
+    background-color: #262626;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 40px;
+}
+#contacto h3{
+    color: #C536ED;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#contacto .redes{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+#contacto .redes a{
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 20px;
+}
+#contacto form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #131313;
+    padding: 20px;
+    border-radius: 10px;
+}
+#contacto form .entrada{
+    margin-bottom: 30px;
+}
+#contacto form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #C536ED;
+    width: 100%;
+    padding: 7px 0;
+    outline: none;
+    color: #bc12ff;}
+    #contacto form textarea {
+        background: transparent;
+    border: none;
+    border-bottom: 1px solid #C536ED;
+    width: 100%;
+    height: 100px;
+    padding: 7px 0;
+    outline: none;
+    color: #bc12ff;
+    }
+    #contacto button {
+        display: inline-block;
+    border: none;
+    background: linear-gradient(45deg, #eecda3, #bc12ff); 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px 0; 
+margin-left: 30%;
+    }
+
+    /* SECCIÓN RESPONSIVE */
+@media only screen and (max-width:700px) {
+header nav {
+    position: initial;
+    display: none; }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #262626;
+        z-index: 99;
+    }
+
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font: 20px;
+    }
+    #inicio .fila .responsive-h1{
+        display: block;
+        text-align: center; }
+   #inicio .fila .col h1{
+    font-size: 25px;
+   }
+   #inicio .fila .col button {
+    margin-left: 0%;
+   }
+   
+    #incio .fila .col {
+        width: 100%;
+    }
+    #sobremi .fila {
+        display: block;
+        text-align: center;
+    }
+    #sobremi .fila .col {
+        width: 100%;
+    }
+    #micurriculum .fila{
+        display: block;
+        text-align: center;
+    }
+    #micurriculum .fila .col{
+        width: 100%;
+    }
+    #micurriculum .fila .col .info {
+        text-align: left;
+    }
+    #portfolio .fila {
+        display: block;
+        text-align: center;
+    }
+    #portfolio .fila .col{
+        width: 80%;
+        margin: auto;
+    }
+}
